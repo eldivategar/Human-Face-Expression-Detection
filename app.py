@@ -8,9 +8,11 @@ import csv
 from automation import visualizationData
 from flask import Flask, render_template, url_for, redirect, request
 from datetime import datetime
+from flask_ngrok import run_with_ngrok
 
 
 app = Flask(__name__)
+# run_with_ngrok(app)
 
 # face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 # model = 'model/emotion-ferplus-8.onnx'
